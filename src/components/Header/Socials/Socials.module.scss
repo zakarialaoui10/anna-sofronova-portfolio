@@ -1,0 +1,19 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  &::after {
+    content: "";
+    width: 0.5px;
+    height: 2rem;
+    background-color: var(--color-primary);
+  }
+}
+
+// ========== Media Queries ==========
+@media screen and (max-width: 600px) {
+  .socials {
+    display: none;
+  }
+}
