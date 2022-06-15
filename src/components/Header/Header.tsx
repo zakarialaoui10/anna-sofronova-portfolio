@@ -1,7 +1,7 @@
 import cn from "classnames/bind";
 
 import styles from "./Header.module.scss";
-import myPhoto from "../../assets/myPhoto.png";
+import MyPhoto from "../../assets/img-home.png";
 import Socials from "./Socials/Socials";
 import CTA from "./CTA/CTA";
 
@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={cn("container", styles.container)}>
-        <div>
+        <div className={styles.title}>
           <h3>Hello I'm</h3>
           <h1>Anna Sofronova</h1>
           <h3 className={cn("text-light")}> FrontEnd Developer</h3>
@@ -20,7 +20,7 @@ const Header = () => {
             <Socials />
           </div>
           <div className={styles.photo}>
-            <img src={myPhoto} alt="me" />
+            <img src={MyPhoto} alt="me" />
           </div>
           <div className={styles.scrollDown}>
             <a href="#contact">Scroll Down</a>

@@ -1,0 +1,54 @@
+.courses {
+  max-width: 100%;
+  .mySwiper {
+    width: 100%;
+    height: 100%;
+  }
+  .mySlide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    color: red;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    a {
+      position: relative;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        color: transparent;
+        padding: 0.5rem;
+      }
+      &:hover {
+        span {
+          background-color: rgba(0, 0, 0, 0.6);
+          color: var(--color-white);
+          transition: var(--transition);
+        }
+      }
+    }
+  }
+}

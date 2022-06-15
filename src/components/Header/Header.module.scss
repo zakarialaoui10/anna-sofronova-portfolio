@@ -1,16 +1,18 @@
 .header {
-  height: 100vh;
+  min-height: 100vh;
   .container {
-    padding: 5rem 0;
     text-align: center;
     height: 100vh;
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 4fr;
-    grid-gap: 0.5rem;
+    grid-gap: 0.2rem;
     justify-content: center;
     align-items: center;
+    .title {
+      padding-top: 2rem;
+    }
     .me {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
@@ -19,9 +21,9 @@
         align-self: end;
       }
       .photo {
-        align-self: center;
         img {
-          max-width: 100%;
+          margin: 0 auto;
+          max-width: 70%;
         }
       }
       .scrollDown {
@@ -29,6 +31,7 @@
         white-space: nowrap;
         transform: rotate(90deg) translateX(-2.3rem);
         font-weight: 300;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -39,7 +42,7 @@
   .header {
     .container {
       .me {
-        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
       }
     }
   }
@@ -50,6 +53,13 @@
     .container {
       .me {
         grid-template-columns: 1fr;
+        align-self: start;
+        .photo {
+          img {
+            margin: 0 auto;
+            max-width: 100%;
+          }
+        }
         .scrollDown {
           display: none;
         }

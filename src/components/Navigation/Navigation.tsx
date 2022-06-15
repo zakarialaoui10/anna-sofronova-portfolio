@@ -28,7 +28,7 @@ const Navigation = () => {
         <AiOutlineUser />
       </a>
       <a
-        href="#experience"
+        href={"#education"}
         className={activeNav === "#experience" ? styles.active : ""}
         onClick={() => setActiveNav("#experience")}
       >

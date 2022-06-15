@@ -4,17 +4,17 @@
 // ========== Variables ==========
 :root {
   --color-bg: #000000;
-  --color-bg-variant: #2c2c6c;
   --color-primary: #94505c;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-primary-opacity: rgba(215, 158, 169, 0.4);
+  --color-primary-variant: #ffa600;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
   --transition: all 400ms ease;
 
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-width-lg: 75vw;
+  --container-width-md: 86vw;
+  --container-width-sm: 90vw;
 }
 
 * {
@@ -60,23 +60,9 @@ h1 {
   font-size: 2.5rem;
 }
 
-section {
-  margin-top: 8rem;
-  height: 100vh;
-}
-section > h2,
-section > h5 {
-  text-align: center;
-  color: var(--color-light);
-}
-
-section > h2 {
-  color: var(--color-primary);
-  margin-bottom: 3rem;
-}
-
 .text-light {
   color: var(--color-light);
+  text-align: center;
 }
 
 a {
@@ -107,11 +93,22 @@ a {
   background: var(--color-primary);
   color: var(--color-bg);
 }
+.btn-primary-variant {
+  background: var(--color-primary-variant);
+  color: var(--color-bg);
+}
 
 img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+.swiper-wrapper {
+  padding-bottom: 1.8rem !important;
+}
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  bottom: 0 !important;
 }
 
 // ========== Media Queries ==========
