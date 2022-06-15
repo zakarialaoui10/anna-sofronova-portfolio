@@ -19,7 +19,7 @@
     font-size: 1.1rem;
     border-radius: 50%;
     &:hover {
-      background-color: rgba(148, 80, 92, 0.4);
+      background-color: var(--color-primary-opacity);
     }
     &.active {
       background: var(--color-bg);
