@@ -35,7 +35,7 @@ const Navigation = () => {
         <AiOutlineExperiment />
       </a>
       <a
-        href="#services"
+        href={"#skills"}
         className={activeNav === "#services" ? styles.active : ""}
         onClick={() => setActiveNav("#services")}
       >

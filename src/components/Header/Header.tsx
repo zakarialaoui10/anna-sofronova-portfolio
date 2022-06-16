@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={cn("container", styles.container)}>
-        <div className={styles.title}>
+        <div>
           <h3>Hello I'm</h3>
           <h1>Anna Sofronova</h1>
           <h3 className={cn("text-light")}> FrontEnd Developer</h3>

@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id={"about"} className={styles.about}>
       <div className={cn("container", styles.container)}>
-        <div className={styles.title}>
+        <div>
           <h3 className={"text-light"}>Get to know</h3>
           <h2>About me</h2>
         </div>
