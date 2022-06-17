@@ -8,7 +8,7 @@ const Education = () => {
   return (
     <section id={"education"} className={styles.education}>
       <div className={cn("container", styles.container)}>
-        <div className={styles.title}>
+        <div>
           <h3 className={"text-light"}>Get to know</h3>
           <h2>My Education</h2>
         </div>

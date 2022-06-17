@@ -29,20 +29,20 @@ const Navigation = () => {
       </a>
       <a
         href={"#education"}
-        className={activeNav === "#experience" ? styles.active : ""}
-        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#education" ? styles.active : ""}
+        onClick={() => setActiveNav("#education")}
       >
         <AiOutlineExperiment />
       </a>
       <a
-        href="#services"
-        className={activeNav === "#services" ? styles.active : ""}
-        onClick={() => setActiveNav("#services")}
+        href={"#skills"}
+        className={activeNav === "#skills" ? styles.active : ""}
+        onClick={() => setActiveNav("#skills")}
       >
         <RiServiceLine />
       </a>
       <a
-        href="#contact"
+        href={"#contact"}
         className={activeNav === "#contact" ? styles.active : ""}
         onClick={() => setActiveNav("#contact")}
       >

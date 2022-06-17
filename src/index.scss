@@ -5,8 +5,9 @@
 :root {
   --color-bg: #000000;
   --color-primary: #94505c;
-  --color-primary-opacity: rgba(215, 158, 169, 0.4);
+  --color-primary-opacity: rgba(215, 158, 169, 0.8);
   --color-primary-variant: #ffa600;
+  --color-primary-variant-opacity: rgba(255, 166, 0, 0.6);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -25,6 +26,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -36,10 +38,10 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
+  font-weight: 200;
 }
 
 // ========== General Styles ==========
@@ -54,10 +56,17 @@ h3,
 h4,
 h5 {
   font-weight: 500;
+  text-align: center;
 }
 
 h1 {
   font-size: 2.5rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-light {

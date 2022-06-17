@@ -1,6 +1,6 @@
 import styles from "./Courses.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay, Mousewheel } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -30,12 +30,13 @@ const Courses = () => {
   return (
     <div className={styles.courses}>
       <Swiper
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay, Mousewheel]}
         slidesPerView={width > 768 ? 3 : width > 480 ? 2 : 1}
         spaceBetween={10}
         pagination={{
           dynamicBullets: true,
         }}
+        mousewheel={true}
         autoplay={{
           delay: 5500,
           disableOnInteraction: false,
