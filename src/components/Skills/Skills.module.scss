@@ -12,24 +12,51 @@
       display: flex;
       gap: 3rem;
       width: 100%;
+      font-weight: 300;
       & > div {
         flex: 1;
-        background-color: var(--color-primary-variant-opacity);
+        background-color: var(--color-primary-variant);
         padding: 1rem 2rem;
         border-radius: 10px;
         border: 1px solid var(--color-primary-variant-opacity);
         h3 {
           text-align: center;
           font-weight: 300;
-          padding-bottom: 1rem;
+          background: var(--color-white);
+          border: 1px solid var(--color-primary-opacity);
+          color: var(--color-primary);
+          padding: 0.2rem 0.5rem;
+          margin-bottom: 1rem;
+          border-radius: 10px;
         }
         &:hover {
           background: transparent;
           border: 1px solid var(--color-primary-variant);
           transition: var(--transition);
           h3 {
-            color: var(--color-white);
+            //color: var(--color-white);
           }
+        }
+      }
+    }
+  }
+}
+
+// ========== Media Queries ==========
+@media screen and (max-width: 768px) {
+  .skills {
+    .container {
+      .main {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .skills {
+      .container {
+        .main {
+          gap: 1rem;
         }
       }
     }
