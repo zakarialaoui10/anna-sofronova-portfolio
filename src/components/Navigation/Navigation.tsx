@@ -4,50 +4,30 @@ import {
   AiOutlineMessage,
   AiOutlineUser,
 } from "react-icons/ai";
-import { RiServiceLine } from "react-icons/ri";
+import { RiComputerLine, RiServiceLine } from "react-icons/ri";
 
 import styles from "./Navigation.module.scss";
-import { useState } from "react";
+import useScrollspy from "../../hooks/useScrollspy";
 
 const Navigation = () => {
-  const [activeNav, setActiveNav] = useState("/#");
+  const ids = ["home", "about", "education", "skills", "portfolio", "contact"];
+  const activeId = useScrollspy(ids, 5);
   return (
     <nav className={styles.nav}>
-      <a
-        href={"/#"}
-        className={activeNav === "/#" ? styles.active : ""}
-        onClick={() => setActiveNav("/#")}
-      >
-        <AiOutlineHome />
-      </a>
-      <a
-        href={"#about"}
-        className={activeNav === "#about" ? styles.active : ""}
-        onClick={() => setActiveNav("#about")}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href={"#education"}
-        className={activeNav === "#education" ? styles.active : ""}
-        onClick={() => setActiveNav("#education")}
-      >
-        <AiOutlineExperiment />
-      </a>
-      <a
-        href={"#skills"}
-        className={activeNav === "#skills" ? styles.active : ""}
-        onClick={() => setActiveNav("#skills")}
-      >
-        <RiServiceLine />
-      </a>
-      <a
-        href={"#contact"}
-        className={activeNav === "#contact" ? styles.active : ""}
-        onClick={() => setActiveNav("#contact")}
-      >
-        <AiOutlineMessage />
-      </a>
+      {ids.map((i) => (
+        <a
+          href={`#${i}`}
+          key={i}
+          className={i === activeId ? styles.active : ""}
+        >
+          {i === "home" && <AiOutlineHome />}
+          {i === "about" && <AiOutlineUser />}
+          {i === "education" && <AiOutlineExperiment />}
+          {i === "skills" && <RiServiceLine />}
+          {i === "portfolio" && <RiComputerLine />}
+          {i === "contact" && <AiOutlineMessage />}
+        </a>
+      ))}
     </nav>
   );
 };
