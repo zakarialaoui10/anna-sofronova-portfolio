@@ -4,10 +4,6 @@ import styles from "./ContactForm.module.scss";
 import Snackbar from "@mui/material/Snackbar";
 import { useState } from "react";
 
-interface State {
-  open: boolean;
-}
-
 type Inputs = {
   name: string;
   email: string;
@@ -16,12 +12,9 @@ type Inputs = {
 };
 
 const ContactForm = () => {
-  const [state, setState] = useState<State>({ open: false });
-  const handleClick = () => () => {
-    setState({ open: true });
-  };
+  const [open, setOpen] = useState(false);
   const handleClose = () => {
-    setState({ open: false });
+    setOpen(false);
   };
   const {
     register,
@@ -40,10 +33,10 @@ const ContactForm = () => {
         )
         .then(
           () => {
-            handleClick();
+            setOpen(true);
           },
           (error) => {
-            console.log("error" + error.text);
+            console.log("Error:" + error.text);
           }
         );
       reset();
@@ -102,9 +95,9 @@ const ContactForm = () => {
       </div>
       <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
-        open={state.open}
+        open={open}
         onClose={handleClose}
-        message="Done!"
+        message="Message is sent!"
       />
     </form>
   );
