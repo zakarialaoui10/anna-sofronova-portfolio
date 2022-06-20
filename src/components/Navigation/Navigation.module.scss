@@ -27,3 +27,18 @@
     }
   }
 }
+
+// ========== Media Queries ==========
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 0.7rem 1rem;
+    gap: 0.4rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .nav {
+    a {
+      padding: 0.5rem;
+    }
+  }
+}
