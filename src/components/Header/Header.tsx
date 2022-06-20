@@ -23,7 +23,7 @@ const Header = () => {
             <img src={MyPhoto} alt="me" />
           </div>
           <div className={styles.scrollDown}>
-            <a href="#contact">Scroll Down</a>
+            <a href={"#contact"}>Scroll Down</a>
           </div>
         </div>
       </div>
