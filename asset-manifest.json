@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/anna-sofronova-portfolio/static/css/main.8c7e52b0.css",
+    "main.js": "/anna-sofronova-portfolio/static/js/main.afc66977.js",
+    "static/media/course5.jpg": "/anna-sofronova-portfolio/static/media/course5.6a2bf448d9aa5c34a28e.jpg",
+    "static/media/course6.jpg": "/anna-sofronova-portfolio/static/media/course6.408f0d1c22145d68adad.jpg",
+    "static/media/course7.jpg": "/anna-sofronova-portfolio/static/media/course7.3d02b72a85dac50f7ff8.jpg",
+    "static/media/course8.jpg": "/anna-sofronova-portfolio/static/media/course8.ec160248f14bacf7f393.jpg",
+    "static/media/course11.jpg": "/anna-sofronova-portfolio/static/media/course11.22688d6250f2816f6c20.jpg",
+    "static/media/course9.jpg": "/anna-sofronova-portfolio/static/media/course9.60404ab8efa1cdfa65aa.jpg",
+    "static/media/course3.jpg": "/anna-sofronova-portfolio/static/media/course3.e7939a903f95f91e2a47.jpg",
+    "static/media/course4.jpg": "/anna-sofronova-portfolio/static/media/course4.6a0baea958ba5f55cc11.jpg",
+    "static/media/course2.jpg": "/anna-sofronova-portfolio/static/media/course2.ee550f156d81e26f36f1.jpg",
+    "static/media/course12.jpg": "/anna-sofronova-portfolio/static/media/course12.b34b8ccdd7008e614dd1.jpg",
+    "static/media/course1.jpg": "/anna-sofronova-portfolio/static/media/course1.88c9904f80dae4037202.jpg",
+    "static/media/course10.jpg": "/anna-sofronova-portfolio/static/media/course10.9822f7e1a63632db48f6.jpg",
+    "static/media/img-about.png": "/anna-sofronova-portfolio/static/media/img-about.820f0e91886cca5bcdfe.png",
+    "static/media/portfolio4.png": "/anna-sofronova-portfolio/static/media/portfolio4.d8d762526fafbfc507b8.png",
+    "static/media/img-home.png": "/anna-sofronova-portfolio/static/media/img-home.8af42edc128e9b1d5998.png",
+    "static/media/portfolio8.png": "/anna-sofronova-portfolio/static/media/portfolio8.13102faaa3b04479a47d.png",
+    "static/media/portfolio7.png": "/anna-sofronova-portfolio/static/media/portfolio7.f87364a434572fe55247.png",
+    "static/media/portfolio1.png": "/anna-sofronova-portfolio/static/media/portfolio1.6f4321bc7873cd1d2b55.png",
+    "static/media/portfolio3.png": "/anna-sofronova-portfolio/static/media/portfolio3.1edd276a78a3a0473b7c.png",
+    "static/media/portfolio2.png": "/anna-sofronova-portfolio/static/media/portfolio2.258651624b97f25c235b.png",
+    "static/media/cv.pdf": "/anna-sofronova-portfolio/static/media/cv.aa1341440de976ee8b4a.pdf",
+    "static/media/portfolio9.png": "/anna-sofronova-portfolio/static/media/portfolio9.7d7343a4c53f9eee34f2.png",
+    "static/media/portfolio6.png": "/anna-sofronova-portfolio/static/media/portfolio6.d1d66c4c88c5c8b8b538.png",
+    "static/media/portfolio5.png": "/anna-sofronova-portfolio/static/media/portfolio5.336ab7dfaee2216d813a.png",
+    "index.html": "/anna-sofronova-portfolio/index.html",
+    "main.8c7e52b0.css.map": "/anna-sofronova-portfolio/static/css/main.8c7e52b0.css.map",
+    "main.afc66977.js.map": "/anna-sofronova-portfolio/static/js/main.afc66977.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c7e52b0.css",
+    "static/js/main.afc66977.js"
+  ]
+}
