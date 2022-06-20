@@ -7,7 +7,7 @@ import CTA from "./CTA/CTA";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id={"home"}>
       <div className={cn("container", styles.container)}>
         <div>
           <h3>Hello I'm</h3>

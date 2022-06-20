@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {
   AiOutlineExperiment,
   AiOutlineHome,
@@ -8,75 +7,27 @@ import {
 import { RiComputerLine, RiServiceLine } from "react-icons/ri";
 
 import styles from "./Navigation.module.scss";
+import useScrollspy from "../../hooks/useScrollspy";
 
 const Navigation = () => {
-  const [activeNav, setActiveNav] = useState("/#");
-  const [scroll, setScroll] = useState(0);
-  const [bodyOffset, setBodyOffset] = useState(
-    document.body.getBoundingClientRect()
-  );
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
-
-  const handleScroll = () => {
-    setBodyOffset(document.body.getBoundingClientRect());
-    setScroll(-bodyOffset.top);
-    if (scroll < 780) setActiveNav("/#");
-    else if (scroll < 1500) setActiveNav("#about");
-    else if (scroll < 2300) setActiveNav("#education");
-    else if (scroll < 3100) setActiveNav("#skills");
-    else if (scroll < 3800) setActiveNav("#portfolio");
-    else setActiveNav("#contact");
-  };
-
+  const ids = ["home", "about", "education", "skills", "portfolio", "contact"];
+  const activeId = useScrollspy(ids, 5);
   return (
     <nav className={styles.nav}>
-      <a
-        href={"/#"}
-        className={activeNav === "/#" ? styles.active : ""}
-        onClick={() => setActiveNav("/#")}
-      >
-        <AiOutlineHome />
-      </a>
-      <a
-        href={"#about"}
-        className={activeNav === "#about" ? styles.active : ""}
-        onClick={() => setActiveNav("#about")}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href={"#education"}
-        className={activeNav === "#education" ? styles.active : ""}
-        onClick={() => setActiveNav("#education")}
-      >
-        <AiOutlineExperiment />
-      </a>
-      <a
-        href={"#skills"}
-        className={activeNav === "#skills" ? styles.active : ""}
-        onClick={() => setActiveNav("#skills")}
-      >
-        <RiServiceLine />
-      </a>
-      <a
-        href={"#portfolio"}
-        className={activeNav === "#portfolio" ? styles.active : ""}
-        onClick={() => setActiveNav("#portfolio")}
-      >
-        <RiComputerLine />
-      </a>
-      <a
-        href={"#contact"}
-        className={activeNav === "#contact" ? styles.active : ""}
-        onClick={() => setActiveNav("#contact")}
-      >
-        <AiOutlineMessage />
-      </a>
+      {ids.map((i) => (
+        <a
+          href={`#${i}`}
+          key={i}
+          className={i === activeId ? styles.active : ""}
+        >
+          {i === "home" && <AiOutlineHome />}
+          {i === "about" && <AiOutlineUser />}
+          {i === "education" && <AiOutlineExperiment />}
+          {i === "skills" && <RiServiceLine />}
+          {i === "portfolio" && <RiComputerLine />}
+          {i === "contact" && <AiOutlineMessage />}
+        </a>
+      ))}
     </nav>
   );
 };
