@@ -1,13 +1,5 @@
 .skills {
-  min-height: 100vh;
   .container {
-    display: flex;
-    flex-direction: column;
-    margin: auto auto;
-    height: 100%;
-    gap: 1rem;
-    align-items: center;
-    justify-items: center;
     .main {
       display: flex;
       gap: 3rem;
@@ -33,9 +25,6 @@
           background: transparent;
           border: 1px solid var(--color-primary-variant);
           transition: var(--transition);
-          h3 {
-            //color: var(--color-white);
-          }
         }
       }
     }
