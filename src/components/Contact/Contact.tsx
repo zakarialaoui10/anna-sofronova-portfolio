@@ -1,7 +1,6 @@
 import styles from "./Contact.module.scss";
 import cn from "classnames/bind";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsTelegram } from "react-icons/bs";
+import { FaTelegramPlane, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import ContactForm from "./ContactForm/ContactForm";
 
 const Contact = () => {
@@ -16,7 +15,7 @@ const Contact = () => {
           <div className={styles.messages}>
             <div>
               <div className={styles.icon}>
-                <AiOutlineMail />
+                <FaEnvelope />
               </div>
 
               <h4>Email</h4>
@@ -30,7 +29,7 @@ const Contact = () => {
             </div>
             <div>
               <div className={styles.icon}>
-                <BsTelegram />
+                <FaTelegramPlane />
               </div>
               <h4>Telegram</h4>
               <a
@@ -39,6 +38,19 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 @Anna_Fawn
+              </a>
+            </div>
+            <div>
+              <div className={styles.icon}>
+                <FaLinkedinIn />
+              </div>
+              <h4>Linked In</h4>
+              <a
+                href="https://github.com/anysofronova"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                @anna-sofronova
               </a>
             </div>
           </div>

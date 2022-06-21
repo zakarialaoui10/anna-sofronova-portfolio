@@ -1,31 +1,28 @@
 .about {
-  min-height: 100vh;
   .container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: auto auto;
-    height: 100%;
-    align-items: center;
-    justify-items: center;
     font-weight: 300;
     .main {
-      display: flex;
+      display: grid;
       height: 100%;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: "two one" "two three";
       align-items: center;
       justify-items: center;
       gap: 1rem;
       flex: 1;
-      .image {
-        flex: 2;
+      p {
+        padding: 0.3rem 0;
       }
-      .info {
-        flex: 3;
+      .info1 {
+        grid-area: one;
+      }
+      .image {
+        grid-area: two;
+      }
+      .info2 {
+        grid-area: three;
         display: flex;
         flex-direction: column;
-        p {
-          padding: 0.3rem 0;
-        }
         a {
           margin: 1rem auto 0 auto;
         }
@@ -35,27 +32,6 @@
 }
 
 // ========== Media Queries ==========
-@media screen and (max-width: 1000px) {
-  .about {
-    .container {
-      .main {
-        flex-direction: column;
-        .image {
-          max-height: 45%;
-          img {
-            max-height: 100%;
-          }
-        }
-        .info {
-          p {
-            padding: 0.6rem 0;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 768px) {
   .about {
     .container {
@@ -64,14 +40,13 @@
       .main {
         gap: 0.5rem;
         font-size: 1rem;
-        .image {
-          max-height: 100%;
-          max-width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "one" "two" "three";
+        p {
+          padding: 0.2rem 0;
         }
-        .info {
-          p {
-            padding: 0.2rem 0;
-          }
+        .image {
+          max-width: 50%;
         }
       }
     }

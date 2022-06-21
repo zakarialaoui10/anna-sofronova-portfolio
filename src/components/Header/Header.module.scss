@@ -1,8 +1,7 @@
 .header {
-  min-height: 100vh;
   .container {
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: grid;
     grid-template-columns: 1fr;

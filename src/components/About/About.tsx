@@ -12,23 +12,25 @@ const About = () => {
           <h2>About me</h2>
         </div>
         <div className={styles.main}>
-          <div className={styles.image}>
-            <img src={photo} alt="img" />
-          </div>
-          <div className={styles.info}>
+          <div className={styles.info1}>
             <p>
               My name is Anna, I am 24 years old, I am Junior Front-End
-              Developer located in Turkey. I have been learning front-end for
-              about 1 year. I am looking to take on work and to increase my
-              skills as a Web Developer.{" "}
+              Developer. I have been learning front-end for about 1 year. I am
+              looking to take on work and to increase my skills as a Web
+              Developer.
             </p>
             <p>
               I like learning new technologies and use them to create cool
               things. My personal qualities are ability to achieve goals,
               effective time planning, perseverance, ability to easily maintain
               business and professional relationships, desire for professional
-              development.{" "}
+              development.
             </p>
+          </div>
+          <div className={styles.image}>
+            <img src={photo} alt="img" />
+          </div>
+          <div className={styles.info2}>
             <p>
               When I work at every task, I learn something new, I am not afraid
               to ask for help and advice. It is important for me to complete the
@@ -37,7 +39,7 @@ const About = () => {
               be useful, with which I can move into the future, contributing to
               the common deal.
             </p>
-            <a href="#contact" className={"btn btn-primary-variant"}>
+            <a href={"#contact"} className={"btn btn-primary-variant"}>
               Let's Talk
             </a>
           </div>
