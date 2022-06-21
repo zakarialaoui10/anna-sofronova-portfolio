@@ -4,8 +4,11 @@ import styles from "./Header.module.scss";
 import MyPhoto from "../../assets/img-home.png";
 import Socials from "./Socials/Socials";
 import CTA from "./CTA/CTA";
+import { useTheme } from "../../hooks/useTheme";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 const Header = () => {
+  const { theme, setTheme } = useTheme();
   return (
     <header className={styles.header} id={"home"}>
       <div className={cn("container", styles.container)}>
@@ -26,6 +29,12 @@ const Header = () => {
             <a href={"#contact"}>Scroll Down</a>
           </div>
         </div>
+      </div>
+      <div
+        className={styles.switch}
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      >
+        {theme === "light" ? <BsSun /> : <BsMoon />}
       </div>
     </header>
   );

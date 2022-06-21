@@ -15,15 +15,15 @@
     background: transparent;
     padding: 0.8rem;
     display: flex;
-    color: var(--color-light);
+    color: var(--color-text);
     font-size: 1.1rem;
     border-radius: 50%;
     &:hover {
       background-color: var(--color-primary-opacity);
     }
     &.active {
-      background: var(--color-bg);
-      color: var(--color-white);
+      background: var(--color-text);
+      color: var(--color-bg);
     }
   }
 }

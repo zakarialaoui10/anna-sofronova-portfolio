@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   .container {
     text-align: center;
     position: relative;
@@ -32,6 +33,19 @@
       }
     }
   }
+  .switch {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: var(--transition);
+    &:hover {
+      color: var(--color-primary-variant);
+      transform: rotate(20deg) scale(1.02);
+    }
+  }
 }
 
 // ========== Media Queries ==========
@@ -60,6 +74,12 @@
         .scrollDown {
           display: none;
         }
+      }
+    }
+    .switch {
+      &:hover {
+        color: var(--color-text);
+        transform: none;
       }
     }
   }
