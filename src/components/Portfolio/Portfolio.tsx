@@ -1,14 +1,14 @@
 import styles from "./Portfolio.module.scss";
 import cn from "classnames/bind";
-import portfolio1 from "../../assets/portfolio1.webp";
-import portfolio2 from "../../assets/portfolio2.webp";
-import portfolio3 from "../../assets/portfolio3.webp";
-import portfolio4 from "../../assets/portfolio4.webp";
-import portfolio5 from "../../assets/portfolio5.webp";
-import portfolio6 from "../../assets/portfolio6.webp";
-import portfolio7 from "../../assets/portfolio7.webp";
-import portfolio8 from "../../assets/portfolio8.webp";
-import portfolio9 from "../../assets/portfolio9.webp";
+import portfolio1 from "../../assets/portfolio/portfolio1.jpg";
+import portfolio2 from "../../assets/portfolio/portfolio2.jpg";
+import portfolio3 from "../../assets/portfolio/portfolio3.jpg";
+import portfolio4 from "../../assets/portfolio/portfolio4.jpg";
+import portfolio5 from "../../assets/portfolio/portfolio5.jpg";
+import portfolio6 from "../../assets/portfolio/portfolio6.jpg";
+import portfolio7 from "../../assets/portfolio/portfolio7.jpg";
+import portfolio8 from "../../assets/portfolio/portfolio8.jpg";
+import portfolio9 from "../../assets/portfolio/portfolio9.jpg";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
 export type Item = {
