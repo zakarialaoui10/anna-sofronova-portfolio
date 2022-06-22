@@ -18,7 +18,7 @@
         justify-content: space-between;
         text-align: center;
         gap: 1rem;
-        width: 100%;
+        max-width: 100%;
         div {
           white-space: nowrap;
           flex: 1;
@@ -49,15 +49,17 @@
           }
           .info {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-direction: column;
             .name {
-              color: var(--color-primary-variant);
               margin-bottom: 0.5rem;
               font-weight: 300;
             }
             .about {
               display: flex;
+              div {
+                flex: 1;
+              }
               span {
                 margin-left: 0.5rem;
               }
@@ -78,7 +80,7 @@
 }
 
 // ========== Media Queries ==========
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .education {
     .container {
       .main {

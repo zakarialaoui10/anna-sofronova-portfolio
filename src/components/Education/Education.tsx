@@ -1,5 +1,6 @@
 import cn from "classnames/bind";
 import { BsCalendar4Week, BsPinMap } from "react-icons/bs";
+import { FormattedMessage } from "react-intl";
 
 import styles from "./Education.module.scss";
 import Courses from "./Courses/Courses";
@@ -9,24 +10,29 @@ const Education = () => {
     <section id={"education"} className={styles.education}>
       <div className={cn("container", styles.container)}>
         <div>
-          <h3 className={"text-light"}>Get to know</h3>
-          <h2>My Education</h2>
+          <h3 className={"text-light"}>
+            <FormattedMessage id={"common_title"} />
+          </h3>
+          <h2>
+            <FormattedMessage id={"education_title"} />
+          </h2>
         </div>
         <div className={styles.main}>
           <div className={styles.university}>
             <div className={styles.item}>
               <div className={styles.degree}>
-                B.S. in Information Technology
+                <FormattedMessage id={"education_bachelor_name"} />
                 <div className={styles.topic}>
-                  Topic of thesis: Development of methods of constructing
-                  compositional embeddings
+                  <FormattedMessage id={"education_bachelor_topic"} />
                 </div>
-                <div className={styles.gpa}>GPA: 4.00 / 4.00</div>
+                <div className={styles.gpa}>
+                  <FormattedMessage id={"education_bachelor_gpa"} />
+                </div>
               </div>
 
               <div className={styles.info}>
                 <div className={styles.name}>
-                  Peoples' Friendship University
+                  <FormattedMessage id={"education_university_name"} />
                 </div>
                 <div className={styles.about}>
                   <div>
@@ -35,24 +41,27 @@ const Education = () => {
                   </div>
                   <div>
                     <BsPinMap />
-                    <span>Moscow, Russia</span>
+                    <span>
+                      <FormattedMessage id={"education_university_place"} />
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
             <div className={styles.item}>
               <div className={styles.degree}>
-                M.S. in Information Technology
+                <FormattedMessage id={"education_magistracy_name"} />
                 <div className={styles.topic}>
-                  Topic of thesis: Distributive semantics methods and word
-                  embeddings for cross-language analysis of legal documents
+                  <FormattedMessage id={"education_magistracy_topic"} />
                 </div>
-                <div className={styles.gpa}>GPA: 3.96 / 4.00</div>
+                <div className={styles.gpa}>
+                  <FormattedMessage id={"education_magistracy_gpa"} />
+                </div>
               </div>
 
               <div className={styles.info}>
                 <div className={styles.name}>
-                  Peoples' Friendship University
+                  <FormattedMessage id={"education_university_name"} />
                 </div>
                 <div className={styles.about}>
                   <div>
@@ -61,7 +70,9 @@ const Education = () => {
                   </div>
                   <div>
                     <BsPinMap />
-                    <span>Moscow, Russia</span>
+                    <span>
+                      <FormattedMessage id={"education_university_place"} />
+                    </span>
                   </div>
                 </div>
               </div>

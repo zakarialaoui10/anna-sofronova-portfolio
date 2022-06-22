@@ -11,6 +11,7 @@
       flex: 1;
       p {
         padding: 0.3rem 0;
+        color: var(--color-text);
       }
       .info1 {
         grid-area: one;
@@ -26,7 +27,7 @@
         align-self: start;
         a {
           margin: 1rem auto 0 auto;
-          color: white;
+          font-weight: 200;
         }
       }
     }

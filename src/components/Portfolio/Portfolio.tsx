@@ -10,6 +10,7 @@ import portfolio7 from "../../assets/portfolio/portfolio7.jpg";
 import portfolio8 from "../../assets/portfolio/portfolio8.jpg";
 import portfolio9 from "../../assets/portfolio/portfolio9.jpg";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
+import { FormattedMessage } from "react-intl";
 
 export type Item = {
   id: number;
@@ -116,8 +117,12 @@ const Portfolio = () => {
     <section id={"portfolio"} className={styles.portfolio}>
       <div className={cn("container", styles.container)}>
         <div>
-          <h3 className={"text-light"}>Get to know</h3>
-          <h2>My Portfolio</h2>
+          <h3 className={"text-light"}>
+            <FormattedMessage id={"common_title"} />
+          </h3>
+          <h2>
+            <FormattedMessage id={"portfolio_title"} />
+          </h2>
         </div>
         <div className={styles.main}>
           {portfolioItems.map((i) => (
