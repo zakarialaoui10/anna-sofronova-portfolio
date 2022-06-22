@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import styles from "./ContactForm.module.scss";
 import Snackbar from "@mui/material/Snackbar";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 type Inputs = {
   name: string;
@@ -10,7 +11,6 @@ type Inputs = {
   phone: number;
   message?: string;
 };
-
 const ContactForm = () => {
   const [open, setOpen] = useState(false);
   const handleClose = () => {
@@ -46,7 +46,9 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={handleSubmit(sendEmail)}>
-      <label>Name: </label>
+      <label>
+        <FormattedMessage id={"contact_name"} />
+      </label>
       <input
         {...register("name", {
           required: true,
@@ -65,7 +67,9 @@ const ContactForm = () => {
         placeholder={"Email"}
       />
 
-      <label>Phone: </label>
+      <label>
+        <FormattedMessage id={"contact_phone"} />
+      </label>
       <input
         {...register("phone", {
           required: true,
@@ -74,7 +78,9 @@ const ContactForm = () => {
         placeholder={"Phone"}
       />
 
-      <label>Message</label>
+      <label>
+        <FormattedMessage id={"contact_message"} />
+      </label>
       <textarea {...register("message")} placeholder={"Message"} />
       {errors?.name?.type === "maxLength" && (
         <p className={styles.error}>Name cannot exceed 30 characters</p>
@@ -91,7 +97,9 @@ const ContactForm = () => {
         <p className={styles.error}>The fields are required</p>
       )}
       <div className={styles.button}>
-        <button className={"btn btn-primary"}>Send</button>
+        <button className={"btn btn-primary"}>
+          <FormattedMessage id={"contact_button"} />
+        </button>
       </div>
       <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "right" }}

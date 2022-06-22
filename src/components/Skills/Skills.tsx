@@ -1,13 +1,18 @@
 import styles from "./Skills.module.scss";
 import cn from "classnames/bind";
+import { FormattedMessage } from "react-intl";
 
 const Skills = () => {
   return (
     <section id={"skills"} className={styles.skills}>
       <div className={cn("container", styles.container)}>
         <div>
-          <h3 className={"text-light"}>Get to know</h3>
-          <h2>My Skills</h2>
+          <h3 className={"text-light"}>
+            <FormattedMessage id={"common_title"} />
+          </h3>
+          <h2>
+            <FormattedMessage id={"skills_title"} />
+          </h2>
         </div>
         <div className={styles.main}>
           <div>
@@ -29,14 +34,30 @@ const Skills = () => {
           <div>
             <h3>Soft Skills</h3>
             <ul>
-              <li>Time management</li>
-              <li>Communication</li>
-              <li>Adaptability</li>
-              <li>Problem-solving</li>
-              <li>Teamwork</li>
-              <li>Creativity</li>
-              <li>Interpersonal skills</li>
-              <li>Attention to detail</li>
+              <li>
+                <FormattedMessage id={"skills_soft_1"} />
+              </li>
+              <li>
+                <FormattedMessage id={"skills_soft_2"} />
+              </li>
+              <li>
+                <FormattedMessage id={"skills_soft_3"} />
+              </li>
+              <li>
+                <FormattedMessage id={"skills_soft_4"} />
+              </li>
+              <li>
+                <FormattedMessage id={"skills_soft_5"} />
+              </li>
+              <li>
+                <FormattedMessage id={"skills_soft_6"} />
+              </li>
+              <li>
+                <FormattedMessage id={"skills_soft_7"} />
+              </li>
+              <li>
+                <FormattedMessage id={"skills_soft_8"} />
+              </li>
             </ul>
           </div>
         </div>
