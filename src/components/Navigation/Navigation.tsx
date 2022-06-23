@@ -1,4 +1,5 @@
 import {
+  AiOutlineArrowUp,
   AiOutlineExperiment,
   AiOutlineHome,
   AiOutlineMessage,
@@ -11,7 +12,7 @@ import useScrollspy from "../../hooks/useScrollspy";
 
 const Navigation = () => {
   const ids = ["home", "about", "education", "skills", "portfolio", "contact"];
-  const activeId = useScrollspy(ids, 5);
+  const { activeId, scroll } = useScrollspy(ids, 5);
   return (
     <nav className={styles.nav}>
       {ids.map((i) => (
@@ -28,6 +29,13 @@ const Navigation = () => {
           {i === "contact" && <AiOutlineMessage />}
         </a>
       ))}
+      {scroll > 800 && (
+        <div className={styles.up}>
+          <a href={"#home"}>
+            <AiOutlineArrowUp />
+          </a>
+        </div>
+      )}
     </nav>
   );
 };
