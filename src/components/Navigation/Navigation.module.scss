@@ -26,9 +26,23 @@
       color: var(--color-bg);
     }
   }
+  .up {
+    position: absolute;
+    right: -30vw;
+    top: 0;
+    background: var(--color-primary-opacity);
+    border-radius: 50%;
+  }
 }
 
 // ========== Media Queries ==========
+@media screen and (max-width: 900px) {
+  .nav {
+    .up {
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: 480px) {
   .nav {
     padding: 0.7rem 1rem;

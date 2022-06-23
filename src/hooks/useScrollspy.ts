@@ -6,9 +6,10 @@ const isBetween = (value: number, floor: number, ceil: number) =>
 
 const useScrollspy = (ids: string[], offset: number = 0) => {
   const [activeId, setActiveId] = useState("");
+  const [scroll, setScroll] = useState(0);
   useLayoutEffect(() => {
     const listener = () => {
-      const scroll = window.pageYOffset;
+      setScroll(window.pageYOffset);
 
       const position = ids
         .map((id) => {
@@ -35,9 +36,9 @@ const useScrollspy = (ids: string[], offset: number = 0) => {
       window.removeEventListener("resize", listener);
       window.removeEventListener("scroll", listener);
     };
-  }, [ids, offset]);
+  }, [ids, offset, scroll]);
 
-  return activeId;
+  return { activeId, scroll };
 };
 
 export default useScrollspy;
