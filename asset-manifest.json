@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anna-sofronova-portfolio/static/css/main.c1922244.css",
-    "main.js": "/anna-sofronova-portfolio/static/js/main.d9ee5eb5.js",
+    "main.css": "/anna-sofronova-portfolio/static/css/main.613a8a74.css",
+    "main.js": "/anna-sofronova-portfolio/static/js/main.75b5a1d8.js",
     "static/media/cv.pdf": "/anna-sofronova-portfolio/static/media/cv.8365b20ab92b1df03c0d.pdf",
     "static/media/img-about.png": "/anna-sofronova-portfolio/static/media/img-about.0a11fd4c0314541bae61.png",
     "static/media/img-home.png": "/anna-sofronova-portfolio/static/media/img-home.4eacc777fea081991de0.png",
@@ -27,11 +27,11 @@
     "static/media/portfolio5.jpg": "/anna-sofronova-portfolio/static/media/portfolio5.126e33e2a01cd4ff2dd6.jpg",
     "static/media/portfolio9.jpg": "/anna-sofronova-portfolio/static/media/portfolio9.1a00c3b9f3e8bb1ecff2.jpg",
     "index.html": "/anna-sofronova-portfolio/index.html",
-    "main.c1922244.css.map": "/anna-sofronova-portfolio/static/css/main.c1922244.css.map",
-    "main.d9ee5eb5.js.map": "/anna-sofronova-portfolio/static/js/main.d9ee5eb5.js.map"
+    "main.613a8a74.css.map": "/anna-sofronova-portfolio/static/css/main.613a8a74.css.map",
+    "main.75b5a1d8.js.map": "/anna-sofronova-portfolio/static/js/main.75b5a1d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1922244.css",
-    "static/js/main.d9ee5eb5.js"
+    "static/css/main.613a8a74.css",
+    "static/js/main.75b5a1d8.js"
   ]
 }
