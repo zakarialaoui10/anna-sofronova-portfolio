@@ -17,7 +17,14 @@ const App: FC = () => {
   });
   const getInitialLocale = () => {
     const savedLocale = localStorage.getItem("locale");
-    return savedLocale || LOCALES.ENGLISH;
+    const lang =
+      window?.navigator?.language === LOCALES.ENGLISH ||
+      window?.navigator?.language === LOCALES.RUSSIAN;
+    return savedLocale
+      ? savedLocale
+      : lang
+      ? window?.navigator?.language
+      : LOCALES.ENGLISH;
   };
   const [currentLocale, setCurrentLocale] = useState(getInitialLocale());
   const handleChange = (e: string) => {
