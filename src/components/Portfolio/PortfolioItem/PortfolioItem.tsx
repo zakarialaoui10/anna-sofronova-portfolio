@@ -1,7 +1,7 @@
 import styles from "./PortfolioItem.module.scss";
-import { Item } from "../Portfolio";
+import { IPortfolio } from "../../../@types/IPortfolio";
 
-const PortfolioItem = ({ img, name, tags, github, link }: Item) => {
+const PortfolioItem = ({ img, name, tags, github, link }: IPortfolio) => {
   return (
     <div className={styles.item} data-img={img}>
       <div className={styles.image}>
