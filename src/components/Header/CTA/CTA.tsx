@@ -1,11 +1,16 @@
 import { FormattedMessage } from "react-intl";
-import cv from "../../../assets/cv.pdf";
+import cv_ru from "../../../assets/CV-ru.pdf";
+import cv_en from "../../../assets/CV-en.pdf";
 import styles from "./CTA.module.scss";
 
-const CTA = () => {
+const CTA = ({ currentLocale }: { currentLocale: string }) => {
   return (
     <div className={styles.cta}>
-      <a href={cv} download className={"btn"}>
+      <a
+        href={currentLocale === "ru-RU" ? cv_ru : cv_en}
+        download
+        className={"btn"}
+      >
         <FormattedMessage id={"header_CV"} />
       </a>
       <a href={"#about"} className={"btn btn-primary"}>
