@@ -27,6 +27,7 @@ const App: FC = () => {
       : LOCALES.ENGLISH;
   };
   const [currentLocale, setCurrentLocale] = useState(getInitialLocale());
+  document.documentElement.lang = currentLocale;
   const handleChange = (e: string) => {
     setCurrentLocale(e);
     localStorage.setItem("locale", e);
