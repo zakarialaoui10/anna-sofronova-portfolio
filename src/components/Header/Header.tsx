@@ -31,7 +31,7 @@ const Header = ({
             <FormattedMessage id={"header_profession"} />
           </h3>
         </div>
-        <CTA />
+        <CTA currentLocale={currentLocale} />
         <div className={styles.me}>
           <div className={styles.social}>
             <Socials />
