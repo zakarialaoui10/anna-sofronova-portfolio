@@ -18,12 +18,12 @@ const App: FC = () => {
   const getInitialLocale = () => {
     const savedLocale = localStorage.getItem("locale");
     const lang =
-      window?.navigator?.language === LOCALES.ENGLISH ||
-      window?.navigator?.language === LOCALES.RUSSIAN;
+      window?.navigator?.language.split("-")[0] === LOCALES.ENGLISH ||
+      window?.navigator?.language.split("-")[0] === LOCALES.RUSSIAN;
     return savedLocale
       ? savedLocale
       : lang
-      ? window?.navigator?.language
+      ? window?.navigator?.language.split("-")[0]
       : LOCALES.ENGLISH;
   };
   const [currentLocale, setCurrentLocale] = useState(getInitialLocale());
@@ -34,7 +34,7 @@ const App: FC = () => {
   return (
     <IntlProvider
       messages={messages[currentLocale]}
-      locale="en"
+      locale={currentLocale}
       defaultLocale="en"
     >
       <Header currentLocale={currentLocale} handleChange={handleChange} />
