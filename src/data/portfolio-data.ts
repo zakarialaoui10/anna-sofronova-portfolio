@@ -66,7 +66,7 @@ export const portfolioData: IPortfolio[] = [
   {
     id: 6,
     name: "ToDo App",
-    tags: ["React", "SCSS", "Adaptive"],
+    tags: ["React", "Typescript", "Redux Toolkit", "SCSS", "Adaptive"],
     type: "React",
     img: portfolio6,
     link: "https://anysofronova.github.io/react-todo-advanced-app/",
