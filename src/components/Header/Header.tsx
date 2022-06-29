@@ -56,8 +56,8 @@ const Header = ({
               value={currentLocale}
               onChange={(e) => handleChange(e.target.value)}
             >
-              <MenuItem value={"ru-RU"}>🇷🇺</MenuItem>
-              <MenuItem value={"en-US"}>🇬🇧</MenuItem>
+              <MenuItem value={"ru"}>🇷🇺</MenuItem>
+              <MenuItem value={"en"}>🇬🇧</MenuItem>
             </Select>
           </FormControl>
         </div>

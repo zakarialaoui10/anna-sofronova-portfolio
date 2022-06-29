@@ -7,7 +7,7 @@ const CTA = ({ currentLocale }: { currentLocale: string }) => {
   return (
     <div className={styles.cta}>
       <a
-        href={currentLocale === "ru-RU" ? cv_ru : cv_en}
+        href={currentLocale === "ru" ? cv_ru : cv_en}
         download
         className={"btn"}
       >
