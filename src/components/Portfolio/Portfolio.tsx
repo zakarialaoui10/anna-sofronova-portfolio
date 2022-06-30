@@ -8,7 +8,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
   return (
     <section id={"portfolio"} className={styles.portfolio}>
-      <div className={cn("container", styles.container)}>
+      <div className={cn("container", styles.container)} data-aos="fade-up">
         <div>
           <h3 className={"text-light"}>{t("common_title")}</h3>
           <h2>{t("portfolio_title")}</h2>

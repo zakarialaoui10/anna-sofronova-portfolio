@@ -12,7 +12,7 @@ import useScrollspy from "../../hooks/useScrollspy";
 
 const Navigation = () => {
   const ids = ["home", "about", "education", "skills", "portfolio", "contact"];
-  const { activeId, scroll } = useScrollspy(ids, 5);
+  const { activeId, scroll } = useScrollspy(ids, 2);
   return (
     <nav className={styles.nav}>
       {ids.map((i) => (

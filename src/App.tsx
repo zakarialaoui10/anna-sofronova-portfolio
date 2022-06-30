@@ -8,6 +8,8 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { FC, Fragment, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App: FC = () => {
   useEffect(() => {
@@ -17,6 +19,7 @@ const App: FC = () => {
   const changeLanguage = (language: string): void => {
     i18n.changeLanguage(language);
   };
+  AOS.init();
   return (
     <Fragment>
       <Header handleChange={changeLanguage} />

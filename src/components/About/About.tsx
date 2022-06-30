@@ -14,14 +14,14 @@ const About = () => {
           <h2>{t("about_title")}</h2>
         </div>
         <div className={styles.main}>
-          <div className={styles.info1}>
+          <div className={styles.info1} data-aos="fade-left">
             <p>{t("about_info1")}</p>
             <p>{t("about_info2")}</p>
           </div>
-          <div className={styles.image}>
+          <div className={styles.image} data-aos="fade-right">
             <img src={photo} alt="img" />
           </div>
-          <div className={styles.info2}>
+          <div className={styles.info2} data-aos="fade-left">
             <p>{t("about_info3")}</p>
             <a href={"#contact"} className={"btn btn-primary-variant"}>
               {t("common_button")}
