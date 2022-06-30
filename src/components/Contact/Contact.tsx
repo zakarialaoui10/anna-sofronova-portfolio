@@ -2,19 +2,16 @@ import styles from "./Contact.module.scss";
 import cn from "classnames/bind";
 import { FaTelegramPlane, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import ContactForm from "./ContactForm/ContactForm";
-import { FormattedMessage } from "react-intl";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section id={"contact"} className={styles.contact}>
       <div className={cn("container", styles.container)}>
         <div>
-          <h3 className={"text-light"}>
-            <FormattedMessage id={"common_title"} />
-          </h3>
-          <h2>
-            <FormattedMessage id={"contact_title"} />
-          </h2>
+          <h3 className={"text-light"}>{t("common_title")}</h3>
+          <h2>{t("contact_title")}</h2>
         </div>
         <div className={styles.main}>
           <div className={styles.messages}>
