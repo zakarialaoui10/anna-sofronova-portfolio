@@ -14,7 +14,7 @@ const Contact = () => {
           <h2>{t("contact_title")}</h2>
         </div>
         <div className={styles.main}>
-          <div className={styles.messages}>
+          <div className={styles.messages} data-aos="fade-right">
             <div>
               <div className={styles.icon}>
                 <FaEnvelope />
@@ -56,7 +56,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className={styles.form}>
+          <div className={styles.form} data-aos="fade-left">
             <ContactForm />
           </div>
         </div>

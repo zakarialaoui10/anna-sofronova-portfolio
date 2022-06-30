@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-aos="fade-up">
       <a
         href="https://github.com/anysofronova"
         target={"_blank"}

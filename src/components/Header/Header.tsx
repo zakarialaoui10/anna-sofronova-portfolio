@@ -15,7 +15,7 @@ const Header = ({ handleChange }: { handleChange: (e: string) => void }) => {
   const { t } = useTranslation();
   const currentLocale = Cookies.get("i18next") || "en";
   return (
-    <header className={styles.header} id={"home"}>
+    <header className={styles.header} id={"home"} data-aos="fade-up">
       <div className={cn("container", styles.container)}>
         <div>
           <h3>{t("header_hello")}</h3>

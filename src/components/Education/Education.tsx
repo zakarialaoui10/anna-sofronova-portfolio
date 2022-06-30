@@ -14,7 +14,7 @@ const Education = () => {
           <h3 className={"text-light"}>{t("common_title")}</h3>
           <h2>{t("education_title")}</h2>
         </div>
-        <div className={styles.main}>
+        <div className={styles.main} data-aos="fade-left">
           <div className={styles.university}>
             <div className={styles.item}>
               <div className={styles.degree}>
@@ -71,7 +71,7 @@ const Education = () => {
           </div>
         </div>
 
-        <div className={styles.courses}>
+        <div className={styles.courses} data-aos="fade-right">
           <Courses />
         </div>
       </div>
