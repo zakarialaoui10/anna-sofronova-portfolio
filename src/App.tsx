@@ -6,39 +6,20 @@ import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import { FC, useEffect, useState } from "react";
-import { IntlProvider } from "react-intl";
-import { LOCALES } from "./i18n/locales";
-import { messages } from "./i18n/messages";
+import { FC, Fragment, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const App: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-  const getInitialLocale = () => {
-    const savedLocale = localStorage.getItem("locale");
-    const lang =
-      window?.navigator?.language.split("-")[0] === LOCALES.ENGLISH ||
-      window?.navigator?.language.split("-")[0] === LOCALES.RUSSIAN;
-    return savedLocale
-      ? savedLocale
-      : lang
-      ? window?.navigator?.language.split("-")[0]
-      : LOCALES.ENGLISH;
-  };
-  const [currentLocale, setCurrentLocale] = useState(getInitialLocale());
-  document.documentElement.lang = currentLocale;
-  const handleChange = (e: string) => {
-    setCurrentLocale(e);
-    localStorage.setItem("locale", e);
+  const { i18n } = useTranslation();
+  const changeLanguage = (language: string): void => {
+    i18n.changeLanguage(language);
   };
   return (
-    <IntlProvider
-      messages={messages[currentLocale]}
-      locale={currentLocale}
-      defaultLocale="en"
-    >
-      <Header currentLocale={currentLocale} handleChange={handleChange} />
+    <Fragment>
+      <Header handleChange={changeLanguage} />
       <Navigation />
       <About />
       <Education />
@@ -46,7 +27,7 @@ const App: FC = () => {
       <Portfolio />
       <Contact />
       <Footer />
-    </IntlProvider>
+    </Fragment>
   );
 };
 

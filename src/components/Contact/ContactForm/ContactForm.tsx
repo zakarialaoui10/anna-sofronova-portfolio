@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import styles from "./ContactForm.module.scss";
 import Snackbar from "@mui/material/Snackbar";
 import { useState } from "react";
-import { FormattedMessage } from "react-intl";
+import { useTranslation } from "react-i18next";
 
 type Inputs = {
   name: string;
@@ -16,6 +16,7 @@ const ContactForm = () => {
   const handleClose = () => {
     setOpen(false);
   };
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -46,16 +47,14 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={handleSubmit(sendEmail)}>
-      <label>
-        <FormattedMessage id={"contact_name"} />
-      </label>
+      <label>{t("contact_name")}</label>
       <input
         {...register("name", {
           required: true,
           pattern: /[a-zA-zа-яА-Я]/gi,
           maxLength: 30,
         })}
-        placeholder={"Name"}
+        placeholder={t("contact_name")}
       />
 
       <label>Email: </label>
@@ -67,21 +66,17 @@ const ContactForm = () => {
         placeholder={"Email"}
       />
 
-      <label>
-        <FormattedMessage id={"contact_phone"} />
-      </label>
+      <label>{t("contact_phone")}</label>
       <input
         {...register("phone", {
           required: true,
           pattern: /^\+?[1-9][0-9]{7,14}$/gi,
         })}
-        placeholder={"Phone"}
+        placeholder={t("contact_phone")}
       />
 
-      <label>
-        <FormattedMessage id={"contact_message"} />
-      </label>
-      <textarea {...register("message")} placeholder={"Message"} />
+      <label>{t("contact_message")}</label>
+      <textarea {...register("message")} placeholder={t("contact_message")} />
       {errors?.name?.type === "maxLength" && (
         <p className={styles.error}>Name cannot exceed 30 characters</p>
       )}
@@ -97,9 +92,7 @@ const ContactForm = () => {
         <p className={styles.error}>The fields are required</p>
       )}
       <div className={styles.button}>
-        <button className={"btn btn-primary"}>
-          <FormattedMessage id={"contact_button"} />
-        </button>
+        <button className={"btn btn-primary"}>{t("contact_button")}</button>
       </div>
       <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
