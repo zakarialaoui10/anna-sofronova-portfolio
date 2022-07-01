@@ -8,6 +8,7 @@ import portfolio6 from "../assets/portfolio/portfolio6.jpg";
 import portfolio7 from "../assets/portfolio/portfolio7.jpg";
 import portfolio8 from "../assets/portfolio/portfolio8.jpg";
 import portfolio9 from "../assets/portfolio/portfolio9.jpg";
+import portfolio10 from "../assets/portfolio/portfolio10.jpg";
 
 export const portfolioData: IPortfolio[] = [
   {
@@ -98,5 +99,14 @@ export const portfolioData: IPortfolio[] = [
     img: portfolio9,
     link: "https://anysofronova.github.io/react-calculator-app/",
     github: "https://github.com/anysofronova/react-calculator-app",
+  },
+  {
+    id: 10,
+    name: "My Portfolio",
+    tags: ["React", "Typescript", "Material UI", "AOS", "SCSS", "Adaptive"],
+    type: "React",
+    img: portfolio10,
+    link: "https://anysofronova.github.io/anna-sofronova-portfolio/",
+    github: "https://github.com/anysofronova/anna-sofronova-portfolio",
   },
 ];
