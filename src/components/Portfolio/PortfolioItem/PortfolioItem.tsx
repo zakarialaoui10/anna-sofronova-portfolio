@@ -3,7 +3,7 @@ import { IPortfolio } from "../../../@types/IPortfolio";
 
 const PortfolioItem = ({ img, name, tags, github, link }: IPortfolio) => {
   return (
-    <div className={styles.item} data-img={img}>
+    <div className={styles.item} data-aos="fade-up">
       <div className={styles.image}>
         <img src={img} alt="Portfolio Item" />
       </div>

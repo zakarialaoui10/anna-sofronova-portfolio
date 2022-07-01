@@ -12,7 +12,7 @@ const Skills = () => {
           <h2>{t("skills_title")}</h2>
         </div>
         <div className={styles.main}>
-          <div data-aos="fade-right">
+          <div data-aos="fade-up">
             <h3>Hard Skills</h3>
             <ul>
               <li>HTML5 (Responsive, Adaptive, BEM)</li>
@@ -28,7 +28,7 @@ const Skills = () => {
               <li>Git</li>
             </ul>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="fade-up">
             <h3>Soft Skills</h3>
             <ul>
               {Array(8)

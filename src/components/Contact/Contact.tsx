@@ -14,7 +14,7 @@ const Contact = () => {
           <h2>{t("contact_title")}</h2>
         </div>
         <div className={styles.main}>
-          <div className={styles.messages} data-aos="fade-right">
+          <div className={styles.messages} data-aos="fade-up">
             <div>
               <div className={styles.icon}>
                 <FaEnvelope />
@@ -48,7 +48,7 @@ const Contact = () => {
               </div>
               <h4>Linked In</h4>
               <a
-                href="https://github.com/anysofronova"
+                href="https://www.linkedin.com/in/anna-sofronova-9975a81ab/"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -56,7 +56,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className={styles.form} data-aos="fade-left">
+          <div className={styles.form} data-aos="fade-up">
             <ContactForm />
           </div>
         </div>

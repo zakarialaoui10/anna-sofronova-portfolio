@@ -13,15 +13,15 @@ const About = () => {
           <h3 className={"text-light"}>{t("common_title")}</h3>
           <h2>{t("about_title")}</h2>
         </div>
-        <div className={styles.main}>
-          <div className={styles.info1} data-aos="fade-left">
+        <div className={styles.main} data-aos="fade-up">
+          <div className={styles.info1}>
             <p>{t("about_info1")}</p>
             <p>{t("about_info2")}</p>
           </div>
-          <div className={styles.image} data-aos="fade-right">
+          <div className={styles.image}>
             <img src={photo} alt="img" />
           </div>
-          <div className={styles.info2} data-aos="fade-left">
+          <div className={styles.info2}>
             <p>{t("about_info3")}</p>
             <a href={"#contact"} className={"btn btn-primary-variant"}>
               {t("common_button")}

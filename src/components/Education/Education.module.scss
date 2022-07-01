@@ -101,6 +101,9 @@
       .main {
         .university {
           flex-direction: column;
+          div {
+            white-space: normal;
+          }
           .item {
             padding: 0.2rem;
           }
