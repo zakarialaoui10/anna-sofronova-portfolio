@@ -12,7 +12,6 @@
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    color: red;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -47,6 +46,21 @@
           background-color: rgba(0, 0, 0, 0.6);
           color: white;
           transition: var(--transition);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .courses {
+    .mySlide {
+      a {
+        &:hover {
+          span {
+            background-color: transparent;
+            color: transparent;
+          }
         }
       }
     }
