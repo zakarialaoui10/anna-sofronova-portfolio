@@ -8,4 +8,4 @@
 </div>
 
 **Demo:** https://anysofronova.github.io/anna-sofronova-portfolio/
-![img](https://i.ibb.co/2nSK4Zd/2022-06-23-12-06-28.png)
+![img](https://i.ibb.co/YZ713rv/2022-07-04-12-08-28.png)
