@@ -4,13 +4,14 @@ import BackEnd from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import translationEN from "./locales/en/translation.json";
 import translationRU from "./locales/ru/translation.json";
+import translationIT from "./locales/it/translation.json";
 
 i18n
   .use(BackEnd)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    supportedLngs: ["ru", "en"],
+    supportedLngs: ["ru", "en", "it"],
     fallbackLng: "en",
     debug: true,
     detection: {
@@ -23,6 +24,9 @@ i18n
       },
       ru: {
         translation: translationRU,
+      },
+      it: {
+        translation: translationIT,
       },
     },
     interpolation: {
