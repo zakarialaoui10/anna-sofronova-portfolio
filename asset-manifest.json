@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anna-sofronova-portfolio/static/css/main.a99eb51b.css",
-    "main.js": "/anna-sofronova-portfolio/static/js/main.b91ce071.js",
+    "main.css": "/anna-sofronova-portfolio/static/css/main.f31c370a.css",
+    "main.js": "/anna-sofronova-portfolio/static/js/main.e85dbf16.js",
     "static/media/CV-ru.pdf": "/anna-sofronova-portfolio/static/media/CV-ru.3db564aad9ab24f8d4b1.pdf",
     "static/media/CV-en.pdf": "/anna-sofronova-portfolio/static/media/CV-en.60b38063c7f04fe42f22.pdf",
     "static/media/img-about.png": "/anna-sofronova-portfolio/static/media/img-about.0a11fd4c0314541bae61.png",
@@ -24,16 +24,17 @@
     "static/media/course10.jpg": "/anna-sofronova-portfolio/static/media/course10.5508112011ba5124ec64.jpg",
     "static/media/portfolio1.jpg": "/anna-sofronova-portfolio/static/media/portfolio1.4ad59508275dcbb9fab5.jpg",
     "static/media/portfolio7.jpg": "/anna-sofronova-portfolio/static/media/portfolio7.555c96ad1683a0d921ba.jpg",
+    "static/media/portfolio10.jpg": "/anna-sofronova-portfolio/static/media/portfolio10.0dd9cbb8072fd866bcbf.jpg",
     "static/media/portfolio6.jpg": "/anna-sofronova-portfolio/static/media/portfolio6.32595f4eea88b8c51100.jpg",
     "static/media/portfolio9.jpg": "/anna-sofronova-portfolio/static/media/portfolio9.cef7c8162102ef2cd149.jpg",
     "static/media/portfolio5.jpg": "/anna-sofronova-portfolio/static/media/portfolio5.126e33e2a01cd4ff2dd6.jpg",
     "index.html": "/anna-sofronova-portfolio/index.html",
     "static/media/getFetch.cjs": "/anna-sofronova-portfolio/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.a99eb51b.css.map": "/anna-sofronova-portfolio/static/css/main.a99eb51b.css.map",
-    "main.b91ce071.js.map": "/anna-sofronova-portfolio/static/js/main.b91ce071.js.map"
+    "main.f31c370a.css.map": "/anna-sofronova-portfolio/static/css/main.f31c370a.css.map",
+    "main.e85dbf16.js.map": "/anna-sofronova-portfolio/static/js/main.e85dbf16.js.map"
   },
   "entrypoints": [
-    "static/css/main.a99eb51b.css",
-    "static/js/main.b91ce071.js"
+    "static/css/main.f31c370a.css",
+    "static/js/main.e85dbf16.js"
   ]
 }
