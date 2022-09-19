@@ -40,12 +40,12 @@
         z-index: 5;
         color: transparent;
         padding: 0.5rem;
+        transition: var(--transition);
       }
       &:hover {
         span {
           background-color: rgba(0, 0, 0, 0.6);
           color: white;
-          transition: var(--transition);
         }
       }
     }

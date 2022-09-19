@@ -4,9 +4,11 @@ import { BsCalendar4Week, BsPinMap } from "react-icons/bs";
 import styles from "./Education.module.scss";
 import Courses from "./Courses/Courses";
 import { useTranslation } from "react-i18next";
+import Cookies from "js-cookie";
 
 const Education = () => {
   const { t } = useTranslation();
+  const currentLocale = Cookies.get("i18next") || "en";
   return (
     <section id={"education"} className={styles.education}>
       <div className={cn("container", styles.container)}>
@@ -27,7 +29,8 @@ const Education = () => {
 
               <div className={styles.info}>
                 <div className={styles.name}>
-                  {t("education_university_name")}
+                  <a href={currentLocale === 'ru' ? 'https://www.rudn.ru/' : 'https://eng.rudn.ru/'} target={"_blank"}
+                     rel="noreferrer">{t("education_university_name")}</a>
                 </div>
                 <div className={styles.about}>
                   <div>
@@ -54,7 +57,8 @@ const Education = () => {
 
               <div className={styles.info}>
                 <div className={styles.name}>
-                  {t("education_university_name")}
+                  <a href={currentLocale === 'ru' ? 'https://www.rudn.ru/' : 'https://eng.rudn.ru/'} target={"_blank"}
+                     rel="noreferrer">{t("education_university_name")}</a>
                 </div>
                 <div className={styles.about}>
                   <div>

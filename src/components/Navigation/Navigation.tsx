@@ -6,12 +6,21 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { RiComputerLine, RiServiceLine } from "react-icons/ri";
+import { TbSchool } from "react-icons/tb";
 
 import styles from "./Navigation.module.scss";
 import useScrollspy from "../../hooks/useScrollspy";
 
 const Navigation = () => {
-  const ids = ["home", "about", "education", "skills", "portfolio", "contact"];
+  const ids = [
+    "home",
+    "about",
+    "education",
+    "experience",
+    "skills",
+    "portfolio",
+    "contact",
+  ];
   const { activeId, scroll } = useScrollspy(ids, 2);
   return (
     <nav className={styles.nav}>
@@ -23,7 +32,8 @@ const Navigation = () => {
         >
           {i === "home" && <AiOutlineHome />}
           {i === "about" && <AiOutlineUser />}
-          {i === "education" && <AiOutlineExperiment />}
+          {i === "education" && <TbSchool />}
+          {i === "experience" && <AiOutlineExperiment />}
           {i === "skills" && <RiServiceLine />}
           {i === "portfolio" && <RiComputerLine />}
           {i === "contact" && <AiOutlineMessage />}

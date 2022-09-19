@@ -31,7 +31,7 @@ const Skills = () => {
           <div data-aos="fade-up">
             <h3>Soft Skills</h3>
             <ul>
-              {Array(8)
+              {Array(7)
                 .fill("0")
                 .map((i, idx) => (
                   <li key={idx}>{t(`skills_soft_${idx + 1}`)} </li>

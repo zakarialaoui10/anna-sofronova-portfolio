@@ -7,15 +7,16 @@
       font-weight: 300;
       & > div {
         flex: 1;
-        background-color: var(--color-primary-variant);
+        background-color: var(--color-primary-opacity);
         padding: 1rem 2rem;
         border-radius: 10px;
         border: 1px solid black;
+        transition: var(--transition);
         h3 {
           text-align: center;
           font-weight: 300;
           background: white;
-          border: 1px solid var(--color-primary-opacity);
+          border: 0.5px solid black;
           padding: 0.2rem 0.5rem;
           margin-bottom: 1rem;
           border-radius: 10px;
@@ -24,7 +25,6 @@
         &:hover {
           background: transparent;
           border: 1px solid var(--color-primary-variant);
-          transition: var(--transition);
         }
       }
     }

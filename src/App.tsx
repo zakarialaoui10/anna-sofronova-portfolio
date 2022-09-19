@@ -10,6 +10,7 @@ import { FC, Fragment, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Experience from "./components/Experience/Experience";
 
 const App: FC = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App: FC = () => {
       <Navigation />
       <About />
       <Education />
+      <Experience />
       <Skills />
       <Portfolio />
       <Contact />
