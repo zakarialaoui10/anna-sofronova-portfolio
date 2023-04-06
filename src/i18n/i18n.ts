@@ -5,13 +5,14 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import translationEN from "./locales/en/translation.json";
 import translationRU from "./locales/ru/translation.json";
 import translationIT from "./locales/it/translation.json";
+import translationFR from "./locales/fr/translation.json";
 
 i18n
   .use(BackEnd)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    supportedLngs: ["ru", "en", "it"],
+    supportedLngs: ["ru", "en", "it","fr"],
     fallbackLng: "en",
     debug: true,
     detection: {
@@ -28,6 +29,9 @@ i18n
       it: {
         translation: translationIT,
       },
+      it: {
+        translation: translationFR,
+      }
     },
     interpolation: {
       escapeValue: false,
