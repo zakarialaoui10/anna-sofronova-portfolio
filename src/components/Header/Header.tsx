@@ -49,6 +49,7 @@ const Header = ({ handleChange }: { handleChange: (e: string) => void }) => {
               <MenuItem value={"ru"}>🇷🇺</MenuItem>
               <MenuItem value={"en"}>🇬🇧</MenuItem>
               <MenuItem value={"it"}>🇮🇹</MenuItem>
+              <MenuItem value={"fr"}>FR</MenuItem>
             </Select>
           </FormControl>
         </div>
