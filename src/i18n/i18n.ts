@@ -29,7 +29,7 @@ i18n
       it: {
         translation: translationIT,
       },
-      it: {
+      fr: {
         translation: translationFR,
       }
     },
